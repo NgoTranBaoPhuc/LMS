@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- -----------------CONTAINER----------------- -->
+    <div class="container">
+        <!-- -------------------NAVBAR----------------------- -->
+        <div class="navbar">
+            <div class="logo"><img src="images/lms-logo.png" alt="LMS Logo" width="100px"></div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                <div class="auth-links">
+                    <a href="#login">
+                        <i class="fa-solid fa-user"></i>
+                        Login
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#register">Register</a>
+                    <a href="#cart" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- -------------------------SEARCH-------------------- -->
+        <form id="search-form">
+            <input type="text" id="search-box" placeholder="Keywords">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="view-all">
+            <h3>We have the largest collection of courses</h3>
+            <a href="">View All Courses <i class="fa-solid fa-angles-right"></i></a>
+        </div>
+    </div>
+    <!-- ----------------------------COUNTER----------------------- -->
+    <div class="counter-wrapper">
+        <div class="cout">
+            <h1 class="counter">332</h1>
+            <div class="line"></div>
+            <p>Courses</p>
+        </div>
+        <div class="cout">
+            <h1 class="counter">1403</h1>
+            <div class="line"></div>
+            <p>Members</p>
+        </div>
+        <div class="cout">
+            <h1 class="counter">60</h1>
+            <div class="line"></div>
+            <p>Authors</p>
+        </div>
+        <div class="cout">
+            <h1 class="counter">120</h1>
+            <div class="line"></div>
+            <p>Subjects</p>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+
+</html>
